@@ -1,0 +1,261 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before,
+q::after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'futura light';
+  src: url("assets/fonts/futura-light.ttf");
+}
+
+@font-face {
+  font-family: 'futura book';
+  src: url("assets/fonts/futura-book.ttf");
+}
+
+@font-face {
+  font-family: 'futura extra-bold';
+  src: url("assets/fonts/futura-extra-bold.ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'futura light', 'helvetica', sans-serif;
+  color: #88081a;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 2rem;
+  font-family: 'futura book', 'helvetica', sans-serif;
+  color: #b1b1b1;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 12.9rem;
+}
+
+a {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+a:hover {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.homepage-header {
+  border: 1px solid #000;
+  width: 100%;
+}
+
+.homepage-header-headline {
+  padding: 50px;
+}
+
+.homepage-header-headline h1 {
+  text-align: center;
+  font-size: 10rem;
+}
+
+.homepage-header .sub-container {
+  border-top: 2px solid #88081a;
+  border-bottom: 2px solid #88081a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homepage-header .sub-container .social-icons {
+  border-right: 1px solid #88081a;
+  width: 32%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.homepage-header .sub-container .social-icons li {
+  border: 1px solid orange;
+  width: 40px;
+  height: 30px;
+}
+
+.homepage-header .sub-container .subtext {
+  text-align: center;
+  line-height: 2.5rem;
+  width: 68%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-nav {
+  padding: 50px 150px;
+}
+
+.main-nav ul {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-nav ul a {
+  font-size: 2.2rem;
+  padding: 5px;
+}
+
+.main-nav ul a:hover {
+  color: #580511;
+  border-top: 1px solid #88081a;
+  border-bottom: 2px solid #88081a;
+}
+
+.main-content {
+  padding: 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-content-block {
+  position: relative;
+}
+
+.main-content-block-label {
+  padding: 15px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+
+.main-content-block-label::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #b1b1b1;
+  left: calc(50% - 15px);
+  width: 0;
+  height: 0;
+}
+
+.main-content-block-image {
+  display: block;
+  position: relative;
+  margin-top: 10px;
+  background-image: url("http://lorempixel.com/600/400");
+  background-size: cover;
+  border: 8px solid white;
+  -webkit-box-shadow: 2px 2px 4px 1px #b1b1b1;
+          box-shadow: 2px 2px 4px 1px #b1b1b1;
+  width: 640px;
+  height: 370px;
+}
+
+.main-content-block-image:hover {
+  top: -10px;
+  -webkit-box-shadow: 3px 3px 4px 3px #b1b1b1;
+          box-shadow: 3px 3px 4px 3px #b1b1b1;
+}
+
+.homepage-footer {
+  padding: 50px;
+  text-align: center;
+}
+
+.homepage-footer a {
+  color: #b1b1b1;
+}
+
+.homepage-footer a:hover {
+  text-decoration: none;
+  color: #88081a;
+}

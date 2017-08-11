@@ -1,0 +1,131 @@
+.homepage-header {
+  border: 1px solid #000;
+  width: 100%;
+
+  &-headline {
+    padding: 50px;
+
+    h1 {
+      text-align: center;
+      font-size: 10rem;
+    }
+  }
+
+  .sub-container {
+    border-top: 2px solid $red;
+    border-bottom: 2px solid $red;
+    display: flex;
+    justify-content: space-between;
+
+    .social-icons {
+      border-right: 1px solid $red;
+      width: 32%;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      li {
+        border: 1px solid orange;
+        width: 40px;
+        height: 30px;
+      }
+
+    }
+
+    .subtext {
+      text-align: center;
+      line-height: 2.5rem;
+      width: 68%;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}
+
+.main-nav {
+  padding: 50px 150px;
+
+  ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    a {
+      font-size: 2.2rem;
+      padding: 5px;
+
+      &:hover {
+        color: darken($red, 10%);
+        border-top: 1px solid $red;
+        border-bottom: 2px solid $red;
+      }
+    }
+
+  }
+}
+
+.main-content {
+  padding: 0 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &-block {
+    position: relative;
+
+    &-label {
+      padding: 15px;
+      font-weight: bold;
+      position: relative;
+      text-align: center;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid $grey;
+        left: calc(50% - 15px);
+        width: 0;
+        height: 0;
+      }
+    }
+
+    &-image {
+      display: block;
+      position: relative;
+      margin-top: 10px;
+      background-image: url('http://lorempixel.com/600/400');
+      background-size: cover;
+      border: 8px solid white;
+      box-shadow: 2px 2px 4px 1px $grey;
+      width: 640px;
+      height: 370px;
+
+      &:hover {
+        top: -10px;
+        box-shadow: 3px 3px 4px 3px $grey;
+      }
+
+    }
+  }
+
+}
+
+.homepage-footer {
+  padding: 50px;
+  text-align: center;
+
+  a {
+    color: $grey;
+
+    &:hover {
+      text-decoration: none;
+      color: $red;
+    }
+  }
+}

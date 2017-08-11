@@ -1,0 +1,65 @@
+//Colors and variables
+$red: #88081a;
+$grey: #b1b1b1;
+$ts: .2s;
+$te: ease-in-out;
+
+//Fonts
+@font-face {
+  font-family: 'futura light';
+  src: url('assets/fonts/futura-light.ttf');
+}
+
+@font-face {
+  font-family: 'futura book';
+  src: url('assets/fonts/futura-book.ttf');
+}
+
+@font-face {
+  font-family: 'futura extra-bold';
+  src: url('assets/fonts/futura-extra-bold.ttf');
+}
+
+
+//Text defaults
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'futura light', 'helvetica', sans-serif;
+  color: $red;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 2rem;
+  font-family: 'futura book', 'helvetica', sans-serif;
+  color: $grey;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 12.9rem;
+}
+
+// Links
+a {
+  transition: $ts $te;
+
+  &:hover {
+    transition: $ts $te;
+    cursor: pointer;
+  }
+}
